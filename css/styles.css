@@ -71,17 +71,17 @@ img {
   color: #000000;
 }
 .logo-down {
-  color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 0.78px;
+
   margin-bottom: 20px;
 }
 .logo-light {
-  color: #f4f4fd;
+  color: #fff;
 }
 .page-nav {
   display: flex;
@@ -95,12 +95,13 @@ img {
   letter-spacing: 0.28px;
   display: inline-flex;
   padding: 32px 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .link:hover,
 .link:focus {
   color: #2196f3;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.active {
   color: #2196f3;
@@ -117,9 +118,7 @@ img {
   border-radius: 2px;
   background: #2196f3;
 }
-.adress-header {
-  font-style: normal;
-}
+
 .page-adress {
   display: flex;
   gap: 50px;
@@ -136,15 +135,22 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .footer-address {
   color: rgba(255, 255, 255, 1);
 }
+.footer-mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
 .adress:hover,
 .adress:focus {
   color: #2196f3;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-icon {
   fill: currentColor;
@@ -196,12 +202,13 @@ img {
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 .page-button:hover,
 .page-button:focus {
   background-color: #188ce8;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-factors {
   padding: 94px 0;
@@ -372,6 +379,7 @@ img {
 }
 .social-link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color;
   color: #afb1b8;
   width: 100%;
   height: 100%;
@@ -388,7 +396,7 @@ img {
 }
 .social-icon {
   fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers {
   padding: 94px 0;
@@ -421,7 +429,8 @@ img {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   color: #afb1b8;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, border-color;
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -431,7 +440,7 @@ img {
 
 .customers-icon {
   fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio {
   padding-bottom: 94px;
@@ -457,6 +466,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background, color, box-shadow;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -475,6 +485,7 @@ img {
 .card-lin {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
 }
 .card-lin:hover,
 .card-lin:focus {
@@ -547,6 +558,7 @@ img {
   flex-direction: column;
   gap: 9px;
 }
+
 .social-footer-content {
   color: #fff;
 
@@ -577,12 +589,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: #2196f3;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   background: rgba(0, 0, 0, 0.2);
@@ -591,6 +604,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  transform: scale(0.8);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -604,6 +618,7 @@ img {
   width: 528px;
   min-height: 581px;
   border-radius: 4px;
+
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -663,6 +678,7 @@ img {
   outline: transparent;
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
 }
 .modal-input:focus {
   border-color: #2196f3;
