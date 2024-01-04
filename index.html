@@ -438,7 +438,7 @@
            <form class="subscribe-form" name="subscribe">
             <label class="subscribe-form-field">
               <input
-                class="subscribe-form-input"
+                class="subscribe-form-input" name="email"
                 type="email"
                 placeholder="E-mail"/>
             </label>
@@ -507,15 +507,15 @@
           </div>
          <div class="modal-field">
           <label class="modal-label" for="user-comment">Коментарій</label>
-                     <textarea
+                 <textarea
                      class="form-feedback"
                      name="user-comment"
                      id="user-comment"
                      rows="5"
-                     placeholder="Введіть текст"></textarea>    
-          </div>
+                     placeholder="Введіть текст"></textarea>   
+                              </div>
           <label class="form-policy-group">
-            <input class="checkbox visually-hidden" type="checkbox" />
+            <input class="checkbox visually-hidden" name="check" type="checkbox" />
             <span class="custom-checkbox">
               <svg class="custom-checkbox-icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-check"></use>
@@ -523,7 +523,7 @@
             </span>
             <span class="form-policy-desc">Погоджуюся з розсилкою та приймаю  <a class="privacy-link" href="">Умови договору</a></span>
           </label>
-          <button type="button" class="modal-send-btn" data-modal-send>Відправити</button>
+          <button type="submit" class="modal-send-btn" data-modal-send>Відправити</button>
         </form>
         </div>
     </div>

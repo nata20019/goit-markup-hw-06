@@ -709,7 +709,10 @@ img {
 
   outline: transparent;
   resize: none;
-  transition: border-color 300ms ease-in;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-feedback:focus {
+  border-color: #2196f3;
 }
 .form-policy-group {
   display: flex;
@@ -725,22 +728,19 @@ img {
   flex-shrink: 0;
   border-radius: 4px;
   outline: 4px solid #ffffff;
-  outline-offset: -2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+
   border-radius: 2px;
 }
 .custom-checkbox-icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
+  border: 1px solid rgba(46, 47, 66, 0.4);
   fill: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  opacity: 0;
-  transition: opacity 250ms ease-in;
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in;
 }
 .checkbox:checked + .custom-checkbox {
   background-color: #2196f3;
@@ -753,7 +753,7 @@ img {
   height: 24px;
   flex-shrink: 0;
   color: #757575;
-
+  margin-left: 7px;
   font-size: 14px;
 
   font-weight: 400;
@@ -788,14 +788,18 @@ img {
   letter-spacing: 0.96px;
 
   border-radius: 4px;
-  background: #188ce8;
+  background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
   align-items: center;
   justify-content: center;
 
   cursor: pointer;
   transition: color background-color shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-send-btn:focus {
+  border-radius: 4px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .subscribe-footer-content {
   color: #fff;
