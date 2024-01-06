@@ -749,7 +749,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in;
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked + .custom-checkbox {
   background-color: #2196f3;
@@ -806,14 +806,14 @@ img {
   justify-content: center;
 
   cursor: pointer;
-  transition: color background-color shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-send-btn:focus {
   border-radius: 4px;
   background: #188ce8;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.container-subscribe {
+.conteiner-subscribe {
   margin-left: auto;
 }
 .subscribe-footer-content {
@@ -884,7 +884,7 @@ img {
   justify-content: center;
 
   cursor: pointer;
-  transition: color background-color shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-icon {
   fill: #ffffff;
