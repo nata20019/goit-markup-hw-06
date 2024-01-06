@@ -639,6 +639,10 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+.modal-close-btm:focus,
+.modal-close-btm:hover {
+  fill: #2196f3;
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -656,6 +660,7 @@ img {
   line-height: normal;
   letter-spacing: 0.6px;
 }
+
 .modal-form {
 }
 .modal-field {
@@ -731,6 +736,10 @@ img {
 
   border-radius: 2px;
 }
+.custom-checkbox:focus,
+.custom-checkbox:hover {
+  color: #2196f3;
+}
 .custom-checkbox-icon {
   display: inline-flex;
   justify-content: center;
@@ -744,6 +753,9 @@ img {
 }
 .checkbox:checked + .custom-checkbox {
   background-color: #2196f3;
+}
+.checkbox:focus + .custom-checkbox > .custom-checkbox-icon {
+  border-color: #2196f3;
 }
 .checkbox:checked + .custom-checkbox + .custom-checkbox-icon {
   opacity: 1;
@@ -801,6 +813,9 @@ img {
   background: #188ce8;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+.container-subscribe {
+  margin-left: auto;
+}
 .subscribe-footer-content {
   color: #fff;
 
@@ -811,13 +826,13 @@ img {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 93px;
 }
 .subscribe-form {
   display: flex;
+  align-items: center;
   gap: 12px;
-  margin-left: 93px;
 }
+
 .subscribe-form-input {
   color: rgba(255, 255, 255, 0.6);
 
